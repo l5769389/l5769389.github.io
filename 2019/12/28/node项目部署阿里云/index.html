@@ -1,16 +1,16 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="zh-CN">
 
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="node项目部署阿里云, Hexo">
+    <meta name="keywords" content="node项目部署阿里云, ECNU NLP DeepLearning AntNLP 韦阳 godweiyang WeiYang 自然语言处理 深度学习">
     <meta name="description" content="在做仿云音乐的微信小程序时发现视频中的接口不太稳定，于是从github中找了一个云音乐的node接口。尝试部署到阿里云上使用。顺便看了一下hexo搭建的git博客。
 api地址：原文地址
 
 通过终端连接服务器
 
-1ssh root@118.">
+ssh root@118.3">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +19,7 @@ api地址：原文地址
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="baidu-site-verification" content="7Bp3L7nJCQ" />
-    <title>node项目部署阿里云 | Hexo</title>
+    <title>node项目部署阿里云 | 韦阳的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -32,7 +32,8 @@ api地址：原文地址
     
     <script src="/libs/jquery/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.2.0"></head>
+<meta name="generator" content="Hexo 4.2.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -44,7 +45,7 @@ api地址：原文地址
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">Hexo</span>
+                    <span class="logo-span">韦阳的博客</span>
                 </a>
             </div>
             
@@ -58,7 +59,7 @@ api地址：原文地址
       
       <i class="fas fa-home" style="zoom: 0.6;"></i>
       
-      <span>Index</span>
+      <span>首页</span>
     </a>
     
   </li>
@@ -69,7 +70,7 @@ api地址：原文地址
       
       <i class="fas fa-tags" style="zoom: 0.6;"></i>
       
-      <span>Tags</span>
+      <span>标签</span>
     </a>
     
   </li>
@@ -80,7 +81,7 @@ api地址：原文地址
       
       <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
       
-      <span>Categories</span>
+      <span>分类</span>
     </a>
     
   </li>
@@ -91,7 +92,7 @@ api地址：原文地址
       
       <i class="fas fa-archive" style="zoom: 0.6;"></i>
       
-      <span>Archives</span>
+      <span>归档</span>
     </a>
     
   </li>
@@ -102,7 +103,7 @@ api地址：原文地址
       
       <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
       
-      <span>About</span>
+      <span>关于</span>
     </a>
     
   </li>
@@ -113,7 +114,7 @@ api地址：原文地址
       
       <i class="fas fa-comments" style="zoom: 0.6;"></i>
       
-      <span>Contact</span>
+      <span>留言板</span>
     </a>
     
   </li>
@@ -124,14 +125,14 @@ api地址：原文地址
       
       <i class="fas fa-address-book" style="zoom: 0.6;"></i>
       
-      <span>Friends</span>
+      <span>友情链接</span>
     </a>
     
   </li>
   
   <li>
     <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
     </a>
   </li>
 </ul>
@@ -142,10 +143,10 @@ api地址：原文地址
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">Hexo</div>
+        <div class="logo-name">韦阳的博客</div>
         <div class="logo-desc">
             
-            Never really desperate, only the lost of the soul.
+            华东师范大学 | 计算机科学与技术 | 自然语言处理
             
         </div>
     </div>
@@ -160,7 +161,7 @@ api地址：原文地址
 			
 			    <i class="fa-fw fas fa-home"></i>
 			
-			Index
+			首页
 		</a>
           
         </li>
@@ -171,7 +172,7 @@ api地址：原文地址
 			
 			    <i class="fa-fw fas fa-tags"></i>
 			
-			Tags
+			标签
 		</a>
           
         </li>
@@ -182,7 +183,7 @@ api地址：原文地址
 			
 			    <i class="fa-fw fas fa-bookmark"></i>
 			
-			Categories
+			分类
 		</a>
           
         </li>
@@ -193,7 +194,7 @@ api地址：原文地址
 			
 			    <i class="fa-fw fas fa-archive"></i>
 			
-			Archives
+			归档
 		</a>
           
         </li>
@@ -204,7 +205,7 @@ api地址：原文地址
 			
 			    <i class="fa-fw fas fa-user-circle"></i>
 			
-			About
+			关于
 		</a>
           
         </li>
@@ -226,7 +227,7 @@ api地址：原文地址
 			
 			    <i class="fa-fw fas fa-address-book"></i>
 			
-			Friends
+			友情链接
 		</a>
           
         </li>
@@ -450,7 +451,7 @@ api地址：原文地址
             <div class="post-info">
                 
                 <div class="post-date info-break-policy">
-                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
                     2019-12-28
                 </div>
                 
@@ -473,8 +474,7 @@ api地址：原文地址
 <ol>
 <li>通过终端连接服务器</li>
 </ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh root@118.31.102.30 //域名是阿里云服务器提供的公网地址</span><br></pre></td></tr></table></figure>
-
+<pre class="line-numbers language-shell"><code class="language-shell">ssh root@118.31.102.30 //域名是阿里云服务器提供的公网地址<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <ol start="2">
 <li><p>输入密码，不是root的那个六位密码。</p>
 </li>
@@ -483,8 +483,10 @@ api地址：原文地址
 <li><p>安装git并配置</p>
 </li>
 </ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.ssh</span><br><span class="line">ssh -keygen  //生成秘钥</span><br><span class="line">//复制id_rsa.pub的内容。在github setting中 --SSH and GPG keys 配置</span><br></pre></td></tr></table></figure>
-
+<pre class="line-numbers language-shell"><code class="language-shell">cd ~/.ssh
+ssh -keygen  //生成秘钥
+//复制id_rsa.pub的内容。在github setting中 --SSH and GPG keys 配置
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <ol start="5">
 <li><p><code>git clone 项目 &amp;&amp; 打开项目 &amp;&amp; npm install</code></p>
 </li>
@@ -493,7 +495,6 @@ api地址：原文地址
 <li><p><code>pm2 start app.js</code> 可以使项目一直运行。避免了关闭ssh就无法访问的问题。</p>
 </li>
 </ol>
-<p><img src="https://tva1.sinaimg.cn/large/006tNbRwgy1gacobfkd9pj303402qweb.jpg" alt="image-20191228194356295"></p>
 
             </div>
             <hr/>
@@ -505,34 +506,34 @@ api地址：原文地址
             <div class="reprint__author">
                 <span class="reprint-meta" style="font-weight: bold;">
                     <i class="fas fa-user">
-                        Author:
+                        文章作者:
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com" rel="external nofollow noreferrer">John Doe</a>
+                    <a href="http://l5769389.github.io" rel="external nofollow noreferrer">韦阳</a>
                 </span>
             </div>
             <div class="reprint__type">
                 <span class="reprint-meta" style="font-weight: bold;">
                     <i class="fas fa-link">
-                        Link:
+                        文章链接:
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2019/12/28/node%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E9%98%BF%E9%87%8C%E4%BA%91/">http://yoursite.com/2019/12/28/node%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E9%98%BF%E9%87%8C%E4%BA%91/</a>
+                    <a href="http://l5769389.github.io/2019/12/28/node%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E9%98%BF%E9%87%8C%E4%BA%91/">http://l5769389.github.io/2019/12/28/node%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E9%98%BF%E9%87%8C%E4%BA%91/</a>
                 </span>
             </div>
             <div class="reprint__notice">
                 <span class="reprint-meta" style="font-weight: bold;">
                     <i class="fas fa-copyright">
-                        Reprint policy:
+                        版权声明:
                     </i>
                 </span>
                 <span class="reprint-info">
-                    All articles in this blog are used except for special statements
+                    本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
-                    reprint polocy. If reproduced, please indicate source
-                    <a href="http://yoursite.com" target="_blank">John Doe</a>
+                    许可协议。转载请注明来源
+                    <a href="http://l5769389.github.io" target="_blank">韦阳</a>
                     !
                 </span>
             </div>
@@ -541,7 +542,7 @@ api地址：原文地址
 
     <script async defer>
       document.addEventListener("copy", function (e) {
-        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
         M.toast({html: toastHTML})
       });
 
@@ -756,7 +757,7 @@ api地址：原文地址
         
         <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;Current
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
                 <a href="/2019/12/28/node%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E9%98%BF%E9%87%8C%E4%BA%91/">
@@ -776,7 +777,7 @@ api地址：原文地址
 
 通过终端连接服务器
 
-1ssh root@118.
+ssh root@118.3
                         
                     </div>
                     <div class="publish-info">
@@ -786,7 +787,7 @@ api地址：原文地址
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
-                            John Doe
+                            韦阳
                             
                         </span>
                     </div>
@@ -811,7 +812,7 @@ api地址：原文地址
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                Current&nbsp;<i class="far fa-dot-circle"></i>
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
                 <a href="/2019/12/28/node%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E9%98%BF%E9%87%8C%E4%BA%91/">
@@ -831,7 +832,7 @@ api地址：原文地址
 
 通过终端连接服务器
 
-1ssh root@118.
+ssh root@118.3
                         
                     </div>
                     <div class="publish-info">
@@ -841,7 +842,7 @@ api地址：原文地址
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
-                            John Doe
+                            韦阳
                             
                         </span>
                     </div>
@@ -897,7 +898,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
     </div>
     <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
         <div class="toc-widget">
-            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
             <div id="toc-content"></div>
         </div>
     </div>
@@ -1000,7 +1001,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             <span id="year">2019</span>
-            <a href="http://yoursite.com" target="_blank">John Doe</a>
+            <a href="http://l5769389.github.io" target="_blank">韦阳</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
@@ -1101,8 +1102,8 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 <div id="searchModal" class="modal">
     <div class="modal-content">
         <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
-            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
                    class="search-input">
         </div>
         <div id="searchResult"></div>
