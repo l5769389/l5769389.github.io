@@ -5,7 +5,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="node项目部署阿里云, Hexo">
-    <meta name="description" content="11111">
+    <meta name="description" content="在做仿云音乐的微信小程序时发现视频中的接口不太稳定，于是从github中找了一个云音乐的node接口。尝试部署到阿里云上使用。顺便看了一下hexo搭建的git博客。
+api地址：原文地址
+
+通过终端连接服务器
+
+1ssh root@118.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -424,9 +429,17 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E9%83%A8%E7%BD%B2/">
+                                <span class="chip bg-color">部署</span>
+                            </a>
+                        
+                            <a href="/tags/node/">
+                                <span class="chip bg-color">node</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -455,7 +468,33 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1>11111</h1>
+                <p>在做仿云音乐的微信小程序时发现视频中的接口不太稳定，于是从github中找了一个云音乐的node接口。尝试部署到阿里云上使用。顺便看了一下hexo搭建的git博客。</p>
+<p>api地址：<a href="https://binaryify.github.io/NeteaseCloudMusicApi/#/?id=neteasecloudmusicapi" target="_blank" rel="noopener">原文地址</a></p>
+<ol>
+<li>通过终端连接服务器</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh root@118.31.102.30 //域名是阿里云服务器提供的公网地址</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><p>输入密码，不是root的那个六位密码。</p>
+</li>
+<li><p>通过<code>apt-get 安装nvm  npm  node</code></p>
+</li>
+<li><p>安装git并配置</p>
+</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.ssh</span><br><span class="line">ssh -keygen  //生成秘钥</span><br><span class="line">//复制id_rsa.pub的内容。在github setting中 --SSH and GPG keys 配置</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li><p><code>git clone 项目 &amp;&amp; 打开项目 &amp;&amp; npm install</code></p>
+</li>
+<li><p>配置阿里云实例的安全组.这样外网才可以访问</p>
+</li>
+<li><p><code>pm2 start app.js</code> 可以使项目一直运行。避免了关闭ssh就无法访问的问题。</p>
+</li>
+</ol>
+<p><img src="https://tva1.sinaimg.cn/large/006tNbRwgy1gacobfkd9pj303402qweb.jpg" alt="image-20191228194356295"></p>
+
             </div>
             <hr/>
 
@@ -517,7 +556,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
+                            
+                                <a href="/tags/%E9%83%A8%E7%BD%B2/">
+                                    <span class="chip bg-color">部署</span>
+                                </a>
+                            
+                                <a href="/tags/node/">
+                                    <span class="chip bg-color">node</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -724,7 +771,12 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            11111
+                            在做仿云音乐的微信小程序时发现视频中的接口不太稳定，于是从github中找了一个云音乐的node接口。尝试部署到阿里云上使用。顺便看了一下hexo搭建的git博客。
+api地址：原文地址
+
+通过终端连接服务器
+
+1ssh root@118.
                         
                     </div>
                     <div class="publish-info">
@@ -740,6 +792,18 @@
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E9%83%A8%E7%BD%B2/">
+                        <span class="chip bg-color">部署</span>
+                    </a>
+                    
+                    <a href="/tags/node/">
+                        <span class="chip bg-color">node</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -762,7 +826,12 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            11111
+                            在做仿云音乐的微信小程序时发现视频中的接口不太稳定，于是从github中找了一个云音乐的node接口。尝试部署到阿里云上使用。顺便看了一下hexo搭建的git博客。
+api地址：原文地址
+
+通过终端连接服务器
+
+1ssh root@118.
                         
                     </div>
                     <div class="publish-info">
@@ -778,6 +847,18 @@
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E9%83%A8%E7%BD%B2/">
+                        <span class="chip bg-color">部署</span>
+                    </a>
+                    
+                    <a href="/tags/node/">
+                        <span class="chip bg-color">node</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
